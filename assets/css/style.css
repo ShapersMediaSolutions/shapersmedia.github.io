@@ -667,3 +667,36 @@ a.backtop:hover{
     background: linear-gradient(to top, var(--color-three) 0%, var(--color-four) 100%) !important;
 }
 html{ scroll-behavior:smooth; }
+
+:root{
+  /* Brand swatches */
+  --shapers-blue:  #1678BB;  /* Blue */
+  --shapers-green: #146F4B;  /* Green */
+  --shapers-red:   #A4272B;  /* Red */
+
+  /* Map to the theme tokens used across the site */
+  --main-color:  var(--shapers-blue);   /* primary gradient start, buttons, accents */
+  --color-two:   var(--shapers-green);  /* gradient end, hovers, accents */
+  --color-three: var(--shapers-red);    /* tertiary accent (badges/lines) */
+  --color-four:  #0B0B0B;               /* deep charcoal for overlays/sections */
+
+  /* Neutrals (used by borders/overlays in the theme) */
+  --white-color:       #FFFFFF;
+  --white-color-rgb:   255,255,255;
+  --black-color:       #000000;
+  --black-color-rgb:   0,0,0;
+}
+
+/* Optional: subtle tweaks so brand colors pop a bit more */
+a:hover,
+.gallery-block_one-heading a:hover,
+.journal-block_one-arrow:hover { color: var(--main-color); }
+
+.theme-btn,
+.service-block_one-more .view-more { 
+  background: linear-gradient(to top, var(--main-color) 0%, var(--color-two) 100%) !important;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(to top, var(--main-color) 0%, var(--color-two) 100%);
+}
