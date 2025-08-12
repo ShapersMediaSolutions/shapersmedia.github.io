@@ -50,12 +50,7 @@
                         <li><a href="journal-detail.html">journal detail</a></li>
                       </ul>
                     </li>
-                    <li class="dropdown"><a href="#">work</a>
-                      <ul>
-                        <li><a href="work.html">work</a></li>
-                        <li><a href="single-work.html">work detail</a></li>
-                      </ul>
-                    </li>
+                    <!-- Removed WORK from the menu per request -->
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </div>
@@ -71,6 +66,7 @@
       </div>
     </div>
 
+    <!-- Mobile Menu -->
     <div class="mobile-menu">
       <div class="menu-backdrop"></div>
       <div class="close-btn"><span class="icon fa-solid fa-xmark fa-fw"></span></div>
@@ -82,32 +78,33 @@
   </header>
   <!-- End Main Header -->
 
-  <!-- Banner One -->
+  <!-- Hero (video only, no slogan/overlay/arrow) -->
   <section class="banner-one" style="background-image:url(assets/images/background/1.jpg)">
-    <!-- Video Background -->
     <div class="hero-video">
-      <video class="hero-video__media" src="assets/video/hero.mp4" poster="assets/images/background/1.jpg" autoplay muted loop playsinline preload="auto"></video>
-      <div class="hero-video__overlay"></div>
+      <video
+        class="hero-video__media"
+        src="assets/video/hero.mp4"
+        poster="assets/images/background/1.jpg"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"></video>
     </div>
-
     <div class="auto-container">
-      <div class="banner-one_content">
-        <div class="banner-one_content-inner">
-          <h1 class="banner-one_heading">We Shape Your Dreams <br> To Life</h1>
-          <div class="lower-box d-flex justify-content-between align-items-center flex-wrap">
-            <div class="banner-one_text">Documentary-style marketing for artists & culture.</div>
-            <div class="banner-one_text-two">Film • Post-Production • Advertising • Restoration</div>
-          </div>
-        </div>
-      </div>
-      <div class="down-box scroll-to-target" data-target=".gallery-one">
-        <img src="assets/images/main-slider/down.png" alt="" />
-      </div>
+      <!-- Removed the slogan and lower-box text -->
+      <!-- Removed the down arrow -->
     </div>
   </section>
-  <!-- End Banner One -->
 
-  <!-- Services One -->
+  <!-- Tagline above Services -->
+  <section class="intro-tagline">
+    <div class="auto-container">
+      <p class="intro-tagline_text">Documentary-style marketing for artists &amp; culture.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
   <section class="services-one">
     <div class="auto-container">
       <div class="sec-title">
@@ -154,12 +151,227 @@
       </div>
     </div>
   </section>
-  <!-- End Services One -->
 
-  <!-- Gallery One (unchanged) -->
-  <!-- ... keep your gallery, journal, testimonial sections ... -->
+  <!-- Projects (restored) -->
+  <section class="gallery-one">
+    <div class="auto-container">
+      <div class="row clearfix">
 
-  <!-- Stats One -->
+        <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
+          <div class="gallery-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="gallery-block_one-content">
+              <div class="gallery-block_one-image">
+                <a href="single-work.html"><img src="assets/images/gallery/1.jpg" alt="" /></a>
+              </div>
+              <div class="gallery-block_one-title">branding</div>
+              <h4 class="gallery-block_one-heading"><a href="single-work.html">Glossy</a></h4>
+            </div>
+            <div class="service-block_one-more">
+              <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
+          <div class="gallery-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="gallery-block_one-content">
+              <div class="gallery-block_one-image">
+                <a href="single-work.html"><img src="assets/images/gallery/2.jpg" alt="" /></a>
+              </div>
+              <div class="gallery-block_one-title">branding</div>
+              <h4 class="gallery-block_one-heading"><a href="single-work.html">Boxkit</a></h4>
+            </div>
+            <div class="service-block_one-more">
+              <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
+          <div class="gallery-block_one-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="gallery-block_one-content">
+              <div class="gallery-block_one-image">
+                <a href="single-work.html"><img src="assets/images/gallery/3.jpg" alt="" /></a>
+              </div>
+              <div class="gallery-block_one-title">branding</div>
+              <h4 class="gallery-block_one-heading"><a href="single-work.html">Landscape</a></h4>
+            </div>
+            <div class="service-block_one-more">
+              <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
+          <div class="gallery-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="gallery-block_one-content">
+              <div class="gallery-block_one-image">
+                <a href="single-work.html"><img src="assets/images/gallery/4.jpg" alt="" /></a>
+              </div>
+              <div class="gallery-block_one-title">branding</div>
+              <h4 class="gallery-block_one-heading"><a href="single-work.html">Brando</a></h4>
+            </div>
+            <div class="service-block_one-more">
+              <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
+          <div class="gallery-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="gallery-block_one-content">
+              <div class="gallery-block_one-image">
+                <a href="single-work.html"><img src="assets/images/gallery/5.jpg" alt="" /></a>
+              </div>
+              <div class="gallery-block_one-title">branding</div>
+              <h4 class="gallery-block_one-heading"><a href="single-work.html">Tabzen</a></h4>
+            </div>
+            <div class="service-block_one-more">
+              <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
+          <div class="gallery-block_one-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="gallery-block_one-content">
+              <div class="gallery-block_one-image">
+                <a href="single-work.html"><img src="assets/images/gallery/6.jpg" alt="" /></a>
+              </div>
+              <div class="gallery-block_one-title">branding</div>
+              <h4 class="gallery-block_one-heading"><a href="journal-detail.html">Minio</a></h4>
+            </div>
+            <div class="service-block_one-more">
+              <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Journal -->
+  <section class="journal-one" style="background-image:url(assets/images/background/2.jpg)">
+    <div class="auto-container">
+      <div class="sec-title">
+        <h2 class="sec-title_heading">Journal</h2>
+        <div class="sec-title_icon"><img src="assets/images/icons/icon-2.png" alt="" /></div>
+      </div>
+      <div class="row clearfix">
+        <div class="journal-block_one">
+          <div class="journal-block_one-inner">
+            <div class="journal-block_one-title">Design</div>
+            <h5 class="journal-block_one-heading"><a href="journal-detail.html">Local Bites: Culinary Experiences Worldwide</a></h5>
+            <a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+          </div>
+        </div>
+        <div class="journal-block_one">
+          <div class="journal-block_one-inner">
+            <div class="journal-block_one-title">tech</div>
+            <h5 class="journal-block_one-heading"><a href="journal-detail.html">Training Triumphs: Athlete's Journey for Excellent race</a></h5>
+            <a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+          </div>
+        </div>
+        <div class="journal-block_one">
+          <div class="journal-block_one-inner">
+            <div class="journal-block_one-title">tutorials</div>
+            <h5 class="journal-block_one-heading"><a href="journal-detail.html">Beyond Books: Practical Learning Adventures</a></h5>
+            <a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+          </div>
+        </div>
+        <div class="journal-block_one">
+          <div class="journal-block_one-inner">
+            <div class="journal-block_one-title">coding</div>
+            <h5 class="journal-block_one-heading"><a href="journal-detail.html">Designing Tomorrow A Glimpse into Creative Innovations</a></h5>
+            <a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+          </div>
+        </div>
+        <div class="journal-block_one">
+          <div class="journal-block_one-inner">
+            <div class="journal-block_one-title">updates</div>
+            <h5 class="journal-block_one-heading"><a href="journal-detail.html">Behind the Scenes of the Digital Revolution</a></h5>
+            <a href="journal-detail.html" class="journal-block_one-arrow fa-solid fa-arrow-right fa-fw"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonial-one">
+    <div class="auto-container">
+      <div class="sec-title">
+        <h2 class="sec-title_heading">Testimonials</h2>
+        <div class="sec-title_icon"><img src="assets/images/icons/icon-3.png" alt="" /></div>
+      </div>
+      <div class="three-item_carousel swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-block_one">
+              <div class="testimonial-block_one-inner">
+                <div class="testimonial-block_one-content">
+                  <div class="testimonial-block_one-author">
+                    <img src="assets/images/resource/author-1.jpg" alt="" />
+                  </div>
+                  <h5 class="testimonial-block_one-name">Ryan Storm</h5>
+                  <div class="testimonial-block_one-designation">CEO at Ipsum</div>
+                  <h5 class="testimonial-block_one-number">01</h5>
+                </div>
+                <div class="testimonial-block_one-lower">
+                  <span class="quote_icon"><img src="assets/images/icons/quote.png" alt="" /></span>
+                  Exceptional work, exceptional team. Montek consistently delivers top-notch results.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-block_one">
+              <div class="testimonial-block_one-inner">
+                <div class="testimonial-block_one-content">
+                  <div class="testimonial-block_one-author">
+                    <img src="assets/images/resource/author-2.jpg" alt="" />
+                  </div>
+                  <h5 class="testimonial-block_one-name">Elly Walker</h5>
+                  <div class="testimonial-block_one-designation">Manger at Lorem LTD</div>
+                  <h5 class="testimonial-block_one-number">02</h5>
+                </div>
+                <div class="testimonial-block_one-lower">
+                  <span class="quote_icon"><img src="assets/images/icons/quote.png" alt="" /></span>
+                  Exceptional work, exceptional team. Montek consistently delivers top-notch results.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-block_one">
+              <div class="testimonial-block_one-inner">
+                <div class="testimonial-block_one-content">
+                  <div class="testimonial-block_one-author">
+                    <img src="assets/images/resource/author-3.jpg" alt="" />
+                  </div>
+                  <h5 class="testimonial-block_one-name">Graham Bolt</h5>
+                  <div class="testimonial-block_one-designation">Freelancer Photographer</div>
+                  <h5 class="testimonial-block_one-number">03</h5>
+                </div>
+                <div class="testimonial-block_one-lower">
+                  <span class="quote_icon"><img src="assets/images/icons/quote.png" alt="" /></span>
+                  Exceptional work, exceptional team. Montek consistently delivers top-notch results.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Stats -->
   <section class="stats-one" style="background-image:url(assets/images/background/3.jpg)">
     <div class="auto-container">
       <div class="sec-title">
@@ -178,21 +390,21 @@
 
           <div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
             <div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="counter-block_one-counter"><span class="odometer" data-count="17"></span>+</div>
+              <div class="counter-block_one-counter"><span class="odometer" data-count="25"></span>+</div>
               <div class="counter-block_one-text">team members</div>
             </div>
           </div>
 
           <div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
             <div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="counter-block_one-counter"><span class="odometer" data-count="43"></span>+</div>
+              <div class="counter-block_one-counter"><span class="odometer" data-count="138"></span>+</div>
               <div class="counter-block_one-text">happy customers</div>
             </div>
           </div>
 
           <div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
             <div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="counter-block_one-counter"><span class="odometer" data-count="21"></span>+</div>
+              <div class="counter-block_one-counter"><span class="odometer" data-count="42"></span>+</div>
               <div class="counter-block_one-text">loyal partners</div>
             </div>
           </div>
@@ -220,9 +432,8 @@
       </div>
     </div>
   </section>
-  <!-- End Stats One -->
 
-  <!-- Main Footer -->
+  <!-- Footer -->
   <footer class="main-footer">
     <div class="auto-container">
       <div class="widgets-section">
@@ -243,7 +454,6 @@
             <ul class="footer_navs">
               <li><a href="index.html">Home <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
               <li><a href="about.html">About <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
-              <li><a href="work.html">work <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
               <li><a href="journal.html">journal <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
               <li><a href="contact.html">Contact <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
             </ul>
@@ -256,20 +466,17 @@
       <div class="auto-container">
         <div class="d-flex justify-content-between align-items-center flex-wrap">
           <div class="footer_copyright">&copy; 2025 shapers-media-solutions</div>
-          <a class="backtop down-box scroll-to-target" data-target=".page-wrapper">
-            <i class="fa-solid fa-arrow-up"></i>
-          </a>
+          <a class="backtop down-box scroll-to-target" data-target=".page-wrapper"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
       </div>
     </div>
   </footer>
-  <!-- End Main Footer -->
 
 </div>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/appear.js"></script>
+script src="assets/js/appear.js"></script>
 <script src="assets/js/wow.js"></script>
 <script src="assets/js/swiper.min.js"></script>
 <script src="assets/js/odometer.js"></script>
