@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Shapers Media Solutions | We Shape Your Dreams To Life</title>
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
-<link href="assets/css/responsive.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta charset="utf-8">
+  <title>Shapers Media Solutions | We Shape Your Dreams To Life</title>
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
-
 <body>
 <div class="page-wrapper">
+
   <!-- Main Header -->
   <header class="main-header">
     <div class="header-lower">
       <div class="auto-container">
         <div class="inner-container">
           <div class="d-flex justify-content-between align-items-center flex-wrap">
-
             <div class="logo-box">
               <div class="logo">
                 <a href="index.html">
@@ -29,7 +28,6 @@
                 </a>
               </div>
             </div>
-
             <div class="nav-outer d-flex flex-wrap">
               <nav class="main-menu navbar-expand-md">
                 <div class="navbar-header">
@@ -39,70 +37,58 @@
                     <span class="icon-bar"></span>
                   </button>
                 </div>
-
                 <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                   <ul class="navigation clearfix">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li class="dropdown"><a href="#">journal</a>
-                      <ul>
-                        <li><a href="journal.html">journal</a></li>
-                        <li><a href="journal-detail.html">journal detail</a></li>
-                      </ul>
-                    </li>
-                    <!-- Removed WORK from the menu per request -->
-                    <li><a href="contact.html">Contact</a></li>
+<li><a href="journal.html">Journal</a></li>
+
+												</li>
+										<li class="dropdown"><a href="#">work</a>
+											<ul>
+												<li><a href="work.html">Production</a></li>
+												<li><a href="Workshops.html">Workshops</a></li>
+											</ul>
+										</li>
+               <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </div>
               </nav>
             </div>
-
             <div class="mobile-nav-toggler">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
             </div>
-
           </div>
         </div>
       </div>
     </div>
-
+    
     <!-- Mobile Menu -->
     <div class="mobile-menu">
       <div class="menu-backdrop"></div>
       <div class="close-btn"><span class="icon fa-solid fa-xmark fa-fw"></span></div>
       <nav class="menu-box">
-        <div class="nav-logo"><a href="index.html"><img src="assets/images/mobile-logo.png" alt="" title=""></a></div>
+       <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-black.png" alt="Shapers Media Logo" title=""></a></div>
         <div class="menu-outer"></div>
       </nav>
     </div>
   </header>
   <!-- End Main Header -->
 
-  <!-- Hero (video only, no slogan/overlay/arrow) -->
-  <section class="banner-one" style="background-image:url(assets/images/background/1.jpg)">
-    <div class="hero-video">
-      <video
-        class="hero-video__media"
-        src="assets/video/hero.mp4"
-        poster="assets/images/background/1.jpg"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"></video>
-    </div>
-    <div class="auto-container">
-      <!-- Removed the slogan and lower-box text -->
-      <!-- Removed the down arrow -->
-    </div>
-  </section>
+ <!-- HERO: plays, then loops reverse on desktop/tablet; on mobile, freezes on last frame -->
+  
+<video id="heroBoomerang"
+       class="hero-video__media"
+       style="width:100vw; height:100vh; object-fit:cover; display:block;"
+       autoplay muted playsinline preload="auto">
+  <source src="assets/video/hero.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-  <!-- Tagline above Services -->
-  <section class="intro-tagline">
-    <div class="auto-container">
-      <p class="intro-tagline_text">Documentary-style marketing for artists &amp; culture.</p>
-    </div>
-  </section>
+  </div>
+  <div class="auto-container"></div>
+</section>
+
 
   <!-- Services -->
   <section class="services-one">
@@ -111,7 +97,6 @@
         <h2 class="sec-title_heading">Services</h2>
         <div class="sec-title_icon"><img src="assets/images/icons/icon-1.png" alt="" /></div>
       </div>
-
       <div class="row clearfix">
         <div class="service-block_one col-lg-6 col-md-6 col-sm-12">
           <div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
@@ -121,7 +106,6 @@
             </div>
           </div>
         </div>
-
         <div class="service-block_one col-lg-6 col-md-6 col-sm-12">
           <div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
             <h3 class="service-block_one-heading">Post <br> Production</h3>
@@ -130,7 +114,6 @@
             </div>
           </div>
         </div>
-
         <div class="service-block_one col-lg-6 col-md-6 col-sm-12">
           <div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
             <h3 class="service-block_one-heading">Advertising <br> Services</h3>
@@ -139,7 +122,6 @@
             </div>
           </div>
         </div>
-
         <div class="service-block_one col-lg-6 col-md-6 col-sm-12">
           <div class="service-block_one-inner d-flex justify-content-between align-items-center flex-wrap">
             <h3 class="service-block_one-heading">Video <br> Restoration</h3>
@@ -152,106 +134,99 @@
     </div>
   </section>
 
-  <!-- Projects (restored) -->
+  <!-- Projects (gallery) -->
   <section class="gallery-one">
     <div class="auto-container">
       <div class="row clearfix">
-
         <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
           <div class="gallery-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="gallery-block_one-content">
               <div class="gallery-block_one-image">
                 <a href="single-work.html"><img src="assets/images/gallery/1.jpg" alt="" /></a>
               </div>
-              <div class="gallery-block_one-title">branding</div>
-              <h4 class="gallery-block_one-heading"><a href="single-work.html">Glossy</a></h4>
+              <div class="gallery-block_one-title">Documentary</div>
+              <h4 class="gallery-block_one-heading"><a href="single-work.html">Tell Your Story</a></h4>
             </div>
             <div class="service-block_one-more">
               <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
             </div>
           </div>
         </div>
-
         <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
           <div class="gallery-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="gallery-block_one-content">
               <div class="gallery-block_one-image">
                 <a href="single-work.html"><img src="assets/images/gallery/2.jpg" alt="" /></a>
               </div>
-              <div class="gallery-block_one-title">branding</div>
-              <h4 class="gallery-block_one-heading"><a href="single-work.html">Boxkit</a></h4>
+              <div class="gallery-block_one-title">Advertising</div>
+              <h4 class="gallery-block_one-heading"><a href="single-work.html">Specilized Ad Campgains</a></h4>
             </div>
             <div class="service-block_one-more">
               <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
             </div>
           </div>
         </div>
-
         <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
           <div class="gallery-block_one-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="gallery-block_one-content">
               <div class="gallery-block_one-image">
                 <a href="single-work.html"><img src="assets/images/gallery/3.jpg" alt="" /></a>
               </div>
-              <div class="gallery-block_one-title">branding</div>
-              <h4 class="gallery-block_one-heading"><a href="single-work.html">Landscape</a></h4>
+              <div class="gallery-block_one-title">Post Production</div>
+              <h4 class="gallery-block_one-heading"><a href="single-work.html">High-End Services </a></h4>
             </div>
             <div class="service-block_one-more">
               <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
             </div>
           </div>
         </div>
-
         <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
           <div class="gallery-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="gallery-block_one-content">
               <div class="gallery-block_one-image">
                 <a href="single-work.html"><img src="assets/images/gallery/4.jpg" alt="" /></a>
               </div>
-              <div class="gallery-block_one-title">branding</div>
-              <h4 class="gallery-block_one-heading"><a href="single-work.html">Brando</a></h4>
+              <div class="gallery-block_one-title">Video Restoration</div>
+              <h4 class="gallery-block_one-heading"><a href="single-work.html">Bring It Back To Life</a></h4>
             </div>
             <div class="service-block_one-more">
               <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
             </div>
           </div>
         </div>
-
         <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
           <div class="gallery-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="gallery-block_one-content">
               <div class="gallery-block_one-image">
                 <a href="single-work.html"><img src="assets/images/gallery/5.jpg" alt="" /></a>
               </div>
-              <div class="gallery-block_one-title">branding</div>
-              <h4 class="gallery-block_one-heading"><a href="single-work.html">Tabzen</a></h4>
+              <div class="gallery-block_one-title">Outsourcing</div>
+              <h4 class="gallery-block_one-heading"><a href="single-work.html">Let Us Help You</a></h4>
             </div>
             <div class="service-block_one-more">
               <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
             </div>
           </div>
         </div>
-
         <div class="gallery-block_one col-lg-4 col-md-6 col-sm-12">
           <div class="gallery-block_one-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
             <div class="gallery-block_one-content">
               <div class="gallery-block_one-image">
                 <a href="single-work.html"><img src="assets/images/gallery/6.jpg" alt="" /></a>
               </div>
-              <div class="gallery-block_one-title">branding</div>
-              <h4 class="gallery-block_one-heading"><a href="journal-detail.html">Minio</a></h4>
+              <div class="gallery-block_one-title">Graphic Design</div>
+              <h4 class="gallery-block_one-heading"><a href="journal-detail.html">Pure Art - No AI</a></h4>
             </div>
             <div class="service-block_one-more">
               <a class="view-more" href="single-work.html">View Project <i class="fa-solid fa-arrow-right fa-fw"></i></a>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Journal -->
+ <!-- Journal -->
   <section class="journal-one" style="background-image:url(assets/images/background/2.jpg)">
     <div class="auto-container">
       <div class="sec-title">
@@ -371,68 +346,77 @@
     </div>
   </section>
 
-  <!-- Stats -->
-  <section class="stats-one" style="background-image:url(assets/images/background/3.jpg)">
-    <div class="auto-container">
-      <div class="sec-title">
-        <h2 class="sec-title_heading">Stats</h2>
-        <div class="sec-title_icon"><img src="assets/images/icons/icon-4.png" alt="" /></div>
-      </div>
-      <div class="inner-container">
-        <div class="clearfix">
-
-          <div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
-            <div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="counter-block_one-counter"><span class="odometer" data-count="235"></span>+</div>
-              <div class="counter-block_one-text">finished projects</div>
-            </div>
-          </div>
-
-          <div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
-            <div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="counter-block_one-counter"><span class="odometer" data-count="25"></span>+</div>
-              <div class="counter-block_one-text">team members</div>
-            </div>
-          </div>
-
-          <div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
-            <div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="counter-block_one-counter"><span class="odometer" data-count="138"></span>+</div>
-              <div class="counter-block_one-text">happy customers</div>
-            </div>
-          </div>
-
-          <div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
-            <div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="counter-block_one-counter"><span class="odometer" data-count="42"></span>+</div>
-              <div class="counter-block_one-text">loyal partners</div>
-            </div>
-          </div>
-
-          <div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
-            <div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="counter-block_one-counter"><span class="odometer" data-count="15628"></span>+</div>
-              <div class="counter-block_one-text">cups of coffee</div>
-            </div>
-          </div>
-
-          <div class="stats-one_contact-column col-lg-4 col-md-6 col-sm-6">
-            <div class="stats-one_contact-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div class="stats-one_contact-content">
-                <a href="contact.html">
-                  <div class="stats-one_contact-icon fa-regular fa-paper-plane fa-fw"></div>
-                  <h3>contact</h3>
-                  <div class="text">get a quote for your project</div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
+  <!-- Stats One -->
+	<section class="stats-one" style="background-image:url(assets/images/background/3.jpg)">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<h2 class="sec-title_heading">Stats</h2>
+				<div class="sec-title_icon"><img src="assets/images/icons/icon-4.png" alt="" /></div>
+			</div>
+			<div class="inner-container">
+				<div class="clearfix">
+					
+					<!-- Counter Column -->
+					<div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
+						<div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="counter-block_one-counter"><span class="odometer" data-count="197">0</span>+</div>
+							<div class="counter-block_one-text">finished projects</div>
+						</div>
+					</div>
+					
+					<!-- Counter Column -->
+					<div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
+						<div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="counter-block_one-counter"><span class="odometer" data-count="15">0</span></div>
+							<div class="counter-block_one-text">team members</div>
+						</div>
+					</div>
+					
+					<!-- Counter Column -->
+					<div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
+						<div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="counter-block_one-counter"><span class="odometer" data-count="188">0</span></div>
+							<div class="counter-block_one-text">happy customers</div>
+						</div>
+					</div>
+					
+					<!-- Counter Column -->
+					<div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
+						<div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="counter-block_one-counter"><span class="odometer" data-count="11">0</span></div>
+							<div class="counter-block_one-text">loyal partners</div>
+						</div>
+					</div>
+					
+					<!-- Counter Column -->
+					<div class="counter-block_one col-lg-4 col-md-6 col-sm-6">
+						<div class="counter-block_one-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="counter-block_one-counter"><span class="odometer" data-count="15628">0</span>+</div>
+							<div class="counter-block_one-text">cofee drinked</div>
+						</div>
+					</div>
+					
+					<!-- Counter Column -->
+					<div class="stats-one_contact-column col-lg-4 col-md-6 col-sm-6">
+						<div class="stats-one_contact-inner wow flipInX" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="stats-one_contact-content">
+								<a href="contact.html">
+								<div class="stats-one_contact-icon fa-regular fa-paper-plane fa-fw"></div>
+								<h3>contact</h3>
+								<div class="text">get a quote for your project</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Stats One -->
+	
   <!-- Footer -->
   <footer class="main-footer">
     <div class="auto-container">
@@ -476,7 +460,7 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-script src="assets/js/appear.js"></script>
+<src="assets/js/appear.js"></script>
 <script src="assets/js/wow.js"></script>
 <script src="assets/js/swiper.min.js"></script>
 <script src="assets/js/odometer.js"></script>
